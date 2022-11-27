@@ -1,0 +1,28 @@
+@model Application.Services.WeeklyReport.Queries.LastAndNumberOfMatch.LastAndNumberOfMatchVm
+ 
+    <div class="col-md-4">  <hr/>
+        <h4  class="bg-dark " style="color: white">Number of Matches This Week</h4>
+      
+        <h5>@Model.NumberOfWeeklyMatch</h5>
+    </div>
+@if (@Model.Match != null)
+{
+    <div class="col-md-4"> <hr/>
+        <h4 class="bg-dark " style="color: white">Last Match</h4>
+
+        <div class="row">
+            <label class="form-label bg-light">Start Date:</label></div>
+        <div class="row"> <label class="form-label">@Model.Match.StartDate</label></div>
+        <div class="row"> <label class="form-label bg-light">End Date:</label></div>
+        <div class="row"><label class="form-label">@Model.Match.EndDate</label></div>
+        <div class="row"> <label class="form-label bg-light">Teams:</label></div>
+
+        @foreach (var team in @Model.Match.MatchTeams)
+        {
+            <div class="row"> <label class="form-label">@team.Team.TeamName</label></div>
+        }
+
+        <div></div>
+    </div>
+}
+ 

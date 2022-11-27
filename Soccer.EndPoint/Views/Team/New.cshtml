@@ -1,0 +1,101 @@
+@model Soccer.EndPoint.Models.Teams.NewTeamVm
+
+@{
+    ViewBag.Title = "Add New Team";
+    Layout = "_Layout";
+}
+@Html.ValidationSummary(false)
+<h2>Add New Team</h2>
+ 
+    <div class="mb-3 mt-3">
+        <label asp-for="TeamName" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="TeamName" placeholder="Enter name" name="TeamName">
+    </div>
+
+    <div class="mb-3 mt-3">
+        <label  class="form-label">Player:</label>
+        <select  class="form-control"  id="Player" asp-items="@Model.PlayersList"></select>
+    </div>
+    <div class="mb-3 mt-3">
+        <a id="btnAddPlayers" class="btn btn-success ">Add</a>
+    </div>
+    <table id="tbl_players" class="col-md-6 table table-bordered">
+        <thead>
+        <tr>
+            <td>Player</td>
+            <td>Operations</td>
+        </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary" id="btnSave" >Submit</button>
+ 
+ 
+@section Scripts
+{
+    <script>
+   $("#btnAddPlayers").on("click" , function (){
+       let txtPlayerNameValue = $("#Player").find('option:selected').val();
+       let txtPlayerName=$("#Player").find('option:selected').text();
+   
+       $("#tbl_players").append('<tr><td>'+txtPlayerName+'</td>'+
+           '<td><a class="btn btn-danger remove">Delete</a>' +
+            '<input id="PlayerId" type="hidden" value="'+txtPlayerNameValue+'" class="playerId"/>'+'</td></tr>');
+   
+   });
+   
+   $("#tbl_players").on("click" ,".remove", function ()
+   {
+       $(this).closest('tr').remove();
+   });
+   
+   $(document).on("click" , "#btnSave" ,function (event)
+   {
+       SendDataToServer(event);
+   });
+   
+   function SendDataToServer(event)
+   {
+      
+           event.preventDefault();
+        
+           let Playerslist= new Array();
+           $('.playerId').each(function ()
+           {
+               let player={};
+               player.PlayerId=parseInt($(this).val());
+               Playerslist.push(player);
+           });
+                      
+           let model ={};
+           model.Players= Playerslist;
+           model.TeamName=$("#TeamName").val();
+          
+                     
+           let input= JSON.stringify( model);
+         
+           $.ajax({
+                    type: 'POST',
+                    url: '/Team/New',
+                    data:JSON.stringify(input),  
+                    contentType: 'application/json',
+                    dataType: "JSON",
+                    success: function(url) {
+                     window.location.href=url;
+                    
+                    },
+                    error: function(xhr, status, error) {           
+                        var err = eval("(" + xhr.responseText + ")");
+                        alert(err.messages);
+                    }
+                });
+      
+      }
+      
+       
+    
+  
+    </script>
+}

@@ -1,0 +1,15 @@
+F:\Asp Net Core test Projects\SoccerScore\Application\bin\Debug\net6.0\Application.deps.json
+F:\Asp Net Core test Projects\SoccerScore\Application\bin\Debug\net6.0\Application.dll
+F:\Asp Net Core test Projects\SoccerScore\Application\bin\Debug\net6.0\Application.pdb
+F:\Asp Net Core test Projects\SoccerScore\Application\bin\Debug\net6.0\Domain.dll
+F:\Asp Net Core test Projects\SoccerScore\Application\bin\Debug\net6.0\Domain.pdb
+F:\Asp Net Core test Projects\SoccerScore\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+F:\Asp Net Core test Projects\SoccerScore\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\Asp Net Core test Projects\SoccerScore\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+F:\Asp Net Core test Projects\SoccerScore\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+F:\Asp Net Core test Projects\SoccerScore\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+F:\Asp Net Core test Projects\SoccerScore\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+F:\Asp Net Core test Projects\SoccerScore\Application\obj\Debug\net6.0\Application.dll
+F:\Asp Net Core test Projects\SoccerScore\Application\obj\Debug\net6.0\refint\Application.dll
+F:\Asp Net Core test Projects\SoccerScore\Application\obj\Debug\net6.0\Application.pdb
+F:\Asp Net Core test Projects\SoccerScore\Application\obj\Debug\net6.0\ref\Application.dll

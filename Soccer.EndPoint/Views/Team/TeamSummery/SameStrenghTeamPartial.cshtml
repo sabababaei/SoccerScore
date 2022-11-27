@@ -1,0 +1,25 @@
+@model ICollection<Application.Services.Teams.Queries.GetTeamOfSameStrength.GetTeamOfSameStrengthVm>
+
+<div class="row">
+    <div class="card-header">
+        Same Strength Teams
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4 text-primary fw-bold">Name</div>
+            <div class="col-md-4 text-primary fw-bold">Rank</div>
+            <div class="col-md-4 text-primary fw-bold">Power</div>
+        </div>
+        
+        <hr/>
+        
+        @foreach (var team in @Model)
+        {
+            <div class="row">
+                <div class="col-md-4">@team.TeamName</div>
+                <div class="col-md-4">@team.Rank</div>
+                <div class="col-md-4">@team.Power</div>
+            </div>
+        }
+    </div>
+</div>

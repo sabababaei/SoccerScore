@@ -1,0 +1,26 @@
+@model Application.Services.WeeklyReport.Queries.MatchesInProgress.MatchesInProgressVm
+<hr/>
+  <h4  class="bg-dark " style="color: white">Matches In Progress</h4>
+<div class="row">
+    <div class="col-4 card-header">StartDate</div>
+    <div class="col-4 card-header">MatchType</div>
+    <div class="col-4 card-header">Teams</div>
+</div>
+@if (@Model.Match != null)
+{
+@foreach (var modeListVm in Model.Match)
+{
+    <div class="row">
+        <div class="col-4">@modeListVm.StartDate</div>
+        <div class="col-4">@modeListVm.MatchType</div>
+        <div class="col-4">
+            @foreach (var matchTeam in modeListVm.MatchTeams)
+            {
+                <div class="col-12">
+                    @matchTeam.Team.TeamName
+                </div>
+            }
+        </div>
+    </div>
+}
+}

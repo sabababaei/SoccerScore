@@ -1,0 +1,60 @@
+﻿@model Soccer.EndPoint.Models.WeeklyReport.WeeklyReportVm
+@{
+    ViewData["Title"] = "Home Page";
+}
+<input hidden="hidden" value="@Model.RankingBarChartVm.TeamsName" id="teamName"/>
+<input hidden="hidden" value="@Model.RankingBarChartVm.TeamsRank" id="teamRank"/>
+
+@section Scripts
+{
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+    <script type="text/javascript">
+       
+   $(function (){  
+       debugger;
+      let teamName=$("#teamName").val().split(",");
+      var teamRank= $("#teamRank").val().split(",");
+                   
+         var mychart = document.getElementById("barcanvas").getContext('2d');
+         let round_graph = new Chart(mychart, {
+           type: 'bar',
+           data: {
+             labels:teamName,
+             datasets: [{
+                 data:teamRank ,
+                   backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
+                        hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+                        hoverBorderColor: "rgba(234, 236, 244, 1)",
+                        borderWidth: 1 ,                        
+                     
+                        }],
+           }
+       
+         });
+             
+                         
+            });
+ 
+              
+ </script>
+
+}
+<div>
+    <a class="btn btn-primary"  asp-area="" asp-controller="Home" asp-action="NewPlayer">New Player</a>
+    <a class="btn btn-primary"  asp-area="" asp-controller="Home" asp-action="NewTeam">New Team</a>
+    <a class="btn btn-primary"  asp-area="" asp-controller="Home" asp-action="NewMatch">Start New Match</a>
+                         
+</div>
+ 
+<div class="row">
+    <h2>Weekly Report</h2>
+</div>
+<div class="row">
+    @Html.Partial("WeeklyReportPartialViews/LastAndNumberOfMatchPartial" , @Model.LastAndNumberOfMatchVm)
+    @Html.Partial("WeeklyReportPartialViews/BestTeamPartial" , @Model.BestTeamVm)
+    @Html.Partial("WeeklyReportPartialViews/FewestAndMostGoalsPartial" ,@Model.FewestAndMostGoalsVm)
+    @Html.Partial("WeeklyReportPartialViews/MatchesInProgressPartial",@Model.MatchesInProgressVm)
+    @Html.Partial("WeeklyReportPartialViews/RankingBarChartPartial",@Model.RankingBarChartVm)
+</div>
+    

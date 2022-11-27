@@ -1,0 +1,20 @@
+@model Application.Services.Teams.Queries.GetTeamSummery.Queries.GetTeamMatchesInfo.GetTeamMatchesInfoVm
+
+<div class="row">
+    <div class="card-header">
+        Matches Details
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4 text-primary fw-bold">Matches Count </div>
+            <div class="col-md-4 text-primary fw-bold"> Number Of Goal</div>
+            
+        </div> 
+        <hr/>
+        <div class="row">
+            <div class="col-md-4">@Model.MatchesCount</div>
+            <div class="col-md-4">@Model.NumberOfGoal</div>
+        </div>
+    </div>
+</div>
+

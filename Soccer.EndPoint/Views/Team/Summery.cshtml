@@ -1,0 +1,81 @@
+@model Soccer.EndPoint.Models.Teams.TeamSummeryVm
+
+@{
+    ViewBag.Title = "Team Summery Informations";
+    Layout = "_Layout";
+}
+
+<h2>Team Summery Informations</h2>
+ 
+@Html.Partial("TeamSummery/TeamBaseInfoPartial" ,@Model.TeamDetailVm)
+@Html.Partial("TeamSummery/TeamMatchesInfoPartial" ,@Model.MatchesInfoVm)
+@Html.Partial("TeamSummery/SameStrenghTeamPartial" ,@Model.SameStrengthVms)
+@Html.Partial("TeamSummery/TeamStatisticalInfoHistoryPartial" ,@Model.StatisticalInfoHistoryVms)
+
+
+
+<input hidden="hidden" value="@Model.StatisticalInfoHistoryVms.TeamsName" id="teamName"/>
+<input hidden="hidden" value="@Model.StatisticalInfoHistoryVms.LastDate" id="dates"/>
+<input hidden="hidden" value="@Model.StatisticalInfoHistoryVms.LastPower" id="powers"/>
+<input hidden="hidden" value="@Model.StatisticalInfoHistoryVms.LastRank" id="ranks"/>
+<input hidden="hidden" value="@Model.StatisticalInfoHistoryVms.LastRate" id="rates"/>
+
+@section Scripts
+{
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+    <script type="text/javascript">
+       
+   $(function (){  
+       debugger;
+      let teamName=$("#teamName").val().split(",");
+      var dates= $("#dates").val().split(",");
+      var powers= $("#powers").val().split(",");
+      var ranks= $("#ranks").val().split(",");
+      var rates= $("#rates").val().split(",");
+                   
+         var mychart = document.getElementById("MyChart").getContext('2d');
+         let round_graph = new Chart(mychart, {
+           type: 'line',
+           data: {
+             labels:dates,
+             datasets: [{
+                 data:powers ,
+                 fill:false,
+                 label:"Power Over The Time",
+                 backgroundColor: 'rgb(0, 0, 255)',
+                  borderColor: 'rgb(102, 153, 255)',
+                 tension: 0.1       
+                     
+                  } ,
+                  {
+                                   data:rates ,
+                                   fill:false,
+                                   label:"Rate Over The Time",
+                                   backgroundColor: 'rgb(153, 51, 0)',
+                                   borderColor: 'rgb(230, 77, 0)',
+                                   tension: 0.1       
+                                       
+                   }
+                   ,
+                                     {
+                                        data:ranks ,
+                                        fill:false,
+                                        label:"Rank Over The Time",
+                                        backgroundColor: 'rgb(255, 0, 0)',
+                                        borderColor: 'rgb(255, 80, 80)',
+                                        tension: 0.1       
+                                                          
+                                      }
+                 ],
+           }
+       
+         });
+             
+                         
+            });
+ 
+              
+ </script>
+
+}

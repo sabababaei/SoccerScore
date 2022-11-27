@@ -1,0 +1,31 @@
+@using Soccer.EndPoint.Models.Players; 
+@model List<PlayerListVm>
+
+
+@{
+    ViewBag.Title = "Players List";
+    Layout = "_Layout";
+}
+
+<h2>Players List</h2>
+<a class="btn btn-primary"  asp-area="" asp-controller="Home" asp-action="NewPlayer">New Player</a>
+<hr/>
+<div>
+    <div class="row">
+        <div class="col-4 card-header">Id</div>
+        <div class="col-4 card-header">Name</div>
+        <div class="col-4 card-header">Operations</div>
+    </div>
+   @foreach(var modeListVm in Model)
+    {
+    <div class="row">
+        <div class="col-4">@modeListVm.Id</div>
+        <div class="col-4">@modeListVm.PlayerName</div>
+        <div class="col-4">
+            <a asp-action="Edit" asp-route-id="@modeListVm.Id">Edit</a>
+            <a asp-action="Delete" asp-route-id="@modeListVm.Id">Delete</a>
+           
+        </div>
+    </div>
+    }
+</div>

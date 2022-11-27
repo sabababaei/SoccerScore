@@ -1,0 +1,48 @@
+@model Application.Services.WeeklyReport.Queries.FewestAndMostGoals.FewestAndMostGoalsVm
+
+<div class="col-md-6"> <hr/>
+    <h4  class="bg-dark " style="color: white">Scored The Highest Goal</h4>
+   
+    @if (@Model.MostGoalsTeam != null)
+    {
+        @foreach (var team in @Model.MostGoalsTeam)
+        {
+            <div class="row">
+                <div class="col-md-4 bg-light">Team Name: </div>
+                <div class="col-md-6"> @team.TeamName</div></div>
+            <div class="row">
+                <div class="col-md-4 bg-light">Rank:</div>
+                <div class="col-md-6">@team.Rank</div></div>
+            <div class="row">
+                <div class="col-md-4 bg-light">Current Rate:</div>
+                <div class="col-md-6">@team.CurrentRate</div></div>
+            <div class="row">
+                <div class="col-md-4 bg-light">Number Of Goals:</div>
+                <div class="col-md-6">@team.WeeklyGoals</div></div>
+
+
+        }
+    }
+</div>
+<div class="col-md-6"><hr/>
+    <h4  class="bg-dark " style="color: white">Scored The Lowest Goal</h4>
+    
+    @if (@Model.FewestGoalsTeams != null)
+    {
+        @foreach (var team in @Model.FewestGoalsTeams)
+        {
+            <div class="row">
+                <div class="col-md-4 bg-light">Team Name: </div>
+                <div class="col-md-6"> @team.TeamName</div></div>
+            <div class="row">
+                <div class="col-md-4 bg-light">Rank:</div>
+                <div class="col-md-6">@team.Rank</div></div>
+            <div class="row">
+                <div class="col-md-4 bg-light">Current Rate:</div>
+                <div class="col-md-6">@team.CurrentRate</div></div>
+            <div class="row">
+                <div class="col-md-4 bg-light">Number Of Goals:</div>
+                <div class="col-md-6">@team.WeeklyGoals</div></div>
+        }
+    }
+</div>

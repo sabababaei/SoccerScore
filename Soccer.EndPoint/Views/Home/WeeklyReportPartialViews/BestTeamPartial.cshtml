@@ -1,0 +1,25 @@
+@model Application.Services.WeeklyReport.Queries.BestTeam.BestTeamVm
+
+<div class="col-md-4">
+    <hr/>
+    <h4 class="bg-dark " style="color: white">Best Team</h4>
+
+    @if (@Model.BestTeams != null)
+    {
+        @foreach (var team in @Model.BestTeams)
+        {
+            <div class="row">
+                <div class="col-md-4 bg-light">Team Name: </div>
+                <div class="col-md-6"> @team.TeamName</div></div>
+            <div class="row">
+                <div class="col-md-4 bg-light">Rank:</div>
+                <div class="col-md-6">@team.Rank</div></div>
+            <div class="row">
+                <div class="col-md-4 bg-light">Current Rate:</div>
+                <div class="col-md-6">@team.CurrentRate</div></div>
+        }
+    }
+</div>
+
+ 
+

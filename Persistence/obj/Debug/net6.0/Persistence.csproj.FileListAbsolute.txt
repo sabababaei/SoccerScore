@@ -1,0 +1,17 @@
+F:\Asp Net Core test Projects\SoccerScore\Persistence\bin\Debug\net6.0\Persistence.deps.json
+F:\Asp Net Core test Projects\SoccerScore\Persistence\bin\Debug\net6.0\Persistence.dll
+F:\Asp Net Core test Projects\SoccerScore\Persistence\bin\Debug\net6.0\Persistence.pdb
+F:\Asp Net Core test Projects\SoccerScore\Persistence\bin\Debug\net6.0\Application.dll
+F:\Asp Net Core test Projects\SoccerScore\Persistence\bin\Debug\net6.0\Domain.dll
+F:\Asp Net Core test Projects\SoccerScore\Persistence\bin\Debug\net6.0\Application.pdb
+F:\Asp Net Core test Projects\SoccerScore\Persistence\bin\Debug\net6.0\Domain.pdb
+F:\Asp Net Core test Projects\SoccerScore\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+F:\Asp Net Core test Projects\SoccerScore\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+F:\Asp Net Core test Projects\SoccerScore\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+F:\Asp Net Core test Projects\SoccerScore\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+F:\Asp Net Core test Projects\SoccerScore\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+F:\Asp Net Core test Projects\SoccerScore\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+F:\Asp Net Core test Projects\SoccerScore\Persistence\obj\Debug\net6.0\Persistence.dll
+F:\Asp Net Core test Projects\SoccerScore\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+F:\Asp Net Core test Projects\SoccerScore\Persistence\obj\Debug\net6.0\Persistence.pdb
+F:\Asp Net Core test Projects\SoccerScore\Persistence\obj\Debug\net6.0\ref\Persistence.dll

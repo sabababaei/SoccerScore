@@ -1,0 +1,27 @@
+@model System.Collections.Generic.IEnumerable<Soccer.EndPoint.Models.Teams.TeamOfSameStrengthVm>
+ 
+<div>
+    <div class="row"> 
+        <div class="col-2 card-header">Team Name</div>
+        <div class="col-2 card-header">Players</div>
+        <div class="col-2 card-header">Matches Count</div>
+        <div class="col-2 card-header">Current Rate</div>
+        <div class="col-2 card-header">Rank</div>
+        <div class="col-2 card-header">Operations</div>
+    </div>
+   @foreach(var modeListVm in Model)
+    {
+    <div class="row"> 
+        <div class="col-2">@modeListVm.TeamName</div>
+        <div class="col-2">@modeListVm.TeamPlayers</div>
+        <div class="col-2">@modeListVm.MatchesCount</div>
+        <div class="col-2">@modeListVm.Rate</div>
+        <div class="col-2">@modeListVm.Rank</div>
+    <div class="col-2">   
+     
+    <input type="button" value ="Select" onclick="sendSuggestedTomain(@modeListVm.Id);" />
+           
+        </div>
+    </div>
+    }
+</div>

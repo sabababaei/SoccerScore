@@ -1,0 +1,14 @@
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
+F:\Asp Net Core test Projects\SoccerScore\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll

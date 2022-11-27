@@ -1,0 +1,94 @@
+@using Soccer.EndPoint.Models.Matches
+@using Domain.Enumarations
+@model GameOverVm
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@Html.ValidationSummary(false)
+<h2>Game Over</h2>
+<div class="mb-3 mt-3">
+    <label asp-for="EndDate" class="form-label">End Date:</label>
+    <input type="datetime-local" class="form-control" id="EndDate" placeholder="Select EndDate" >
+</div>
+<div>
+    <div class="row">
+        @foreach(var entityTeam in Model.MatchTeams){
+            <div class="col teamInfo">
+                <h2><label >@entityTeam.Team.TeamName</label></h2>
+                <div class="mb-3 mt-3">
+                    <label asp-for="@entityTeam.NumberOfGoal" class="form-label">Number Of Goal:</label>
+                    <input type="number" class="form-control" id="NumberOfGoal"  name="TeamName">
+                    <input type="hidden"   id="MatchTeamId"  value="@entityTeam.Id">
+                </div>
+                <div class="mb-3 mt-3">
+                    
+                    @foreach (var res in Enum.GetValues(typeof(MatchResult)))
+                    {
+                        var inputname = "Result" + @entityTeam.Id;
+                        <label asp-for="@entityTeam.Result" class="form-label">@res</label>
+                        <input class="form-check-input" type="radio" asp-for="@entityTeam.Result" id="Result" name=@inputname value="@((int)res)">
+                    }
+                </div>
+            
+            </div>
+        }
+       
+    </div>
+    <div class="mb-3 mt-3">
+        <button type="submit" class="btn btn-primary" id="btnSave"  >Submit</button>
+    </div>
+
+</div>
+@section Scripts
+{
+    <script>
+    $(document).on("click" ,"#btnSave" ,function (event)
+    {
+       
+        let model={};
+        let matchTeam=new Array();
+        let endDate=$('#EndDate').val();
+       $(".teamInfo").each(function (i , teamInfo){
+          
+           let matchTeamId = $(teamInfo).find("#MatchTeamId").val();
+           let numberOfGoal=$(teamInfo).find("#NumberOfGoal").val();
+           let radioname = 'Result'+matchTeamId;
+          
+           let result =($(teamInfo).find("input[type=radio][name='"+radioname+"']").filter(":checked")[0]).value;
+             var teaminfo={}
+             teaminfo.Id= matchTeamId;
+             teaminfo.NumberOfGoal=numberOfGoal;
+             teaminfo.Result=result;
+             
+             matchTeam.push(teaminfo);
+       });
+       
+       debugger;
+       model.EndDate= endDate;
+       model.MatchTeams= matchTeam;
+       model.Id=@Model.Id
+       let input= JSON.stringify(model);
+       
+       $.ajax(
+       {
+            type:"POST",
+            url :"/Match/GameOver",
+            data:JSON.stringify(input),
+            contentType:"application/json",
+            dataType:"JSON",
+            success: function(url) {
+               window.location.href=url;
+                                                         
+              },
+            error: function(xhr) {           
+               var err = eval("(" + xhr.responseText + ")");
+               alert(err.messages);
+               }                  
+       });
+        
+    });
+    </script>
+}

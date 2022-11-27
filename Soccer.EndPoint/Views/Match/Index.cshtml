@@ -1,0 +1,47 @@
+@using Soccer.EndPoint.Models.Matches
+@using Domain.Enumarations
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<MatchListVm>
+
+@{
+    ViewBag.Title = "List Of Matches";
+    Layout = "_Layout";
+}
+
+<h2>List Of Matches</h2>
+<a class="btn btn-primary"  asp-area="" asp-controller="Home" asp-action="NewMatch">New Match</a>
+<hr/>
+<div>
+    <div class="row">
+         <div class="col-2 card-header">Teams</div>
+         <div class="col-1 card-header">Status</div>
+        <div class="col-2 card-header">StartDate</div>
+        <div class="col-2 card-header">EndDate</div>
+        <div class="col-2 card-header">MatchType</div>
+        <div class="col-3 card-header">Operations</div>
+    </div>
+   @foreach(var modeListVm in Model)
+    {
+    <div class="row">
+      
+        <div class="col-2">@modeListVm.MatchTeamsName</div>
+        <div class="col-1">@modeListVm.Status</div>
+        <div class="col-2">@modeListVm.StartDate</div>
+        <div class="col-2">@modeListVm.EndDate</div>
+        <div class="col-2">@modeListVm.MatchType</div>
+        <div class="col-3">
+            @if (modeListVm.Status != MatchStatus.Done)
+            {
+                <a asp-action="GameOver" asp-route-id="@modeListVm.Id" >Game over</a>
+
+            }
+            |
+            <a asp-action="" asp-route-id="@modeListVm.Id">Edit</a>|
+            <a asp-action="" asp-route-id="@modeListVm.Id">Delete</a>
+
+
+        </div>
+    </div>
+    }
+</div>
+

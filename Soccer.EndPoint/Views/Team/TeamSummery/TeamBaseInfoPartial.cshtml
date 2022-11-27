@@ -1,0 +1,32 @@
+@model Application.Services.Teams.Queries.GetTeamDetail.GetTeamDetailVm
+<div class="row">
+    <div class="card-header">
+        Team Details
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4 text-primary fw-bold">Name</div>
+            <div class="col-md-4 text-primary fw-bold">Rank</div>
+            <div class="col-md-4 text-primary fw-bold">Power</div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-4">@Model.TeamName</div>
+            <div class="col-md-4">@Model.Rank</div>
+            <div class="col-md-4">@Model.Power</div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-4 text-primary fw-bold">Current Rate</div>
+            <div class="col-md-8 text-primary fw-bold">Players</div>
+        </div>
+
+        <hr/>
+        <div class="row">
+            <div class="col-md-4">@Model.CurrentRate</div>
+            <div class="col-md-8">@Model.TeamPlayers</div>
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,116 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Soccer.EndPoint
+build_property.RootNamespace = Soccer.EndPoint
+build_property.ProjectDir = F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Home/WeeklyReportPartialViews/BestTeamPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWVrbHlSZXBvcnRQYXJ0aWFsVmlld3NcQmVzdFRlYW1QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Home/WeeklyReportPartialViews/FewestAndMostGoalsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWVrbHlSZXBvcnRQYXJ0aWFsVmlld3NcRmV3ZXN0QW5kTW9zdEdvYWxzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Home/WeeklyReportPartialViews/LastAndNumberOfMatchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWVrbHlSZXBvcnRQYXJ0aWFsVmlld3NcTGFzdEFuZE51bWJlck9mTWF0Y2hQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Home/WeeklyReportPartialViews/MatchesInProgressPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWVrbHlSZXBvcnRQYXJ0aWFsVmlld3NcTWF0Y2hlc0luUHJvZ3Jlc3NQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Home/WeeklyReportPartialViews/RankingBarChartPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWVrbHlSZXBvcnRQYXJ0aWFsVmlld3NcUmFua2luZ0JhckNoYXJ0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Match/GameOver.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hcR2FtZU92ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Match/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Match/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Match/ShowTeamOfSameStrength.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hcU2hvd1RlYW1PZlNhbWVTdHJlbmd0aC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Player/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Player/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Team/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Team/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Team/Summery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxTdW1tZXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Team/TeamSummery/SameStrenghTeamPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxUZWFtU3VtbWVyeVxTYW1lU3RyZW5naFRlYW1QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Team/TeamSummery/TeamBaseInfoPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxUZWFtU3VtbWVyeVxUZWFtQmFzZUluZm9QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Team/TeamSummery/TeamMatchesInfoPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxUZWFtU3VtbWVyeVxUZWFtTWF0Y2hlc0luZm9QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Team/TeamSummery/TeamStatisticalInfoHistoryPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxUZWFtU3VtbWVyeVxUZWFtU3RhdGlzdGljYWxJbmZvSGlzdG9yeVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Asp Net Core test Projects/SoccerScore/Soccer.EndPoint/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bxo2uimstj

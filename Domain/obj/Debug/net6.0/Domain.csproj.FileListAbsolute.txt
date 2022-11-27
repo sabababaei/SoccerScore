@@ -1,0 +1,12 @@
+F:\Asp Net Core test Projects\SoccerScore\Domain\bin\Debug\net6.0\Domain.deps.json
+F:\Asp Net Core test Projects\SoccerScore\Domain\bin\Debug\net6.0\Domain.dll
+F:\Asp Net Core test Projects\SoccerScore\Domain\bin\Debug\net6.0\Domain.pdb
+F:\Asp Net Core test Projects\SoccerScore\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+F:\Asp Net Core test Projects\SoccerScore\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Asp Net Core test Projects\SoccerScore\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+F:\Asp Net Core test Projects\SoccerScore\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+F:\Asp Net Core test Projects\SoccerScore\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+F:\Asp Net Core test Projects\SoccerScore\Domain\obj\Debug\net6.0\Domain.dll
+F:\Asp Net Core test Projects\SoccerScore\Domain\obj\Debug\net6.0\refint\Domain.dll
+F:\Asp Net Core test Projects\SoccerScore\Domain\obj\Debug\net6.0\Domain.pdb
+F:\Asp Net Core test Projects\SoccerScore\Domain\obj\Debug\net6.0\ref\Domain.dll

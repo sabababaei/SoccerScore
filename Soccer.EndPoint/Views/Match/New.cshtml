@@ -1,0 +1,146 @@
+@using Domain.Enumarations
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model Soccer.EndPoint.Models.Matches.NewMatchesVm
+
+@{
+    ViewBag.Title = "Start New Match";
+    Layout = "_Layout";
+}
+@Html.ValidationSummary(false)
+<h2>Start New Match</h2>
+
+<div class="mb-3 mt-3">
+    <label  class="form-label">Choose The First Team:</label>
+    <select class="form-control" id="First_Team" asp-items="@Model.TeamsList">
+              <option selected="selected">---select---</option>
+    </select>
+</div>
+<div class="mb-3 mt-3">
+ <button type="submit" class="btn btn-info" id="btnSuggestTeam" >Suggest Me Teams!</button>
+</div>
+<div class="mb-3 mt-3">
+    <label  class="form-label">Choose The Second Team:</label>
+    <select class="form-control" id="Second_Team" asp-items="@Model.TeamsList">
+        <option selected="selected">---select---</option>
+    </select>
+</div>
+<div class="mb-3 mt-3">
+    <label asp-for="StartDate" class="form-label">Start Date:</label>
+    <input type="datetime-local" class="form-control" id="StartDate" placeholder="Select StartDate" name="StartDate">
+</div>
+<div class="mb-3 mt-3">
+    <label class="form-label">Match Type:</label>
+<select class="form-select" id="MatchType" asp-items="Html.GetEnumSelectList<MatchTypes>()"></select>
+</div>
+<div class="mb-3 mt-3">
+    <button type="submit" class="btn btn-primary" id="btnSave" >Submit</button>
+</div>
+<div id="dialog" style="display: none">
+    
+</div>
+
+@section Scripts
+{
+    <script>
+    $(function (){
+        
+    $("#dialog").dialog({
+    
+                     autoOpen: false,
+                     title: "List Of Same Strength Teams",
+                     height: 300,
+                     width: 750,
+                     modal: true,
+                     show: 'fade',
+                     hide: 'fade',
+                     dialogClass: 'no-close success-dialog',               
+                     close : function() {
+                       $(this).dialog( "close" );
+                     }
+                });
+    });
+     
+     
+    $(document).on("click","#btnSuggestTeam" ,function (event){
+            
+        event.preventDefault();
+        
+        let TeamId = $("#First_Team").find('option:selected').val();
+        
+        $.ajax({
+        type:'POST',
+        url:'/Match/SuggestTeam',
+        data: JSON.stringify(TeamId),//( '{"TeamId":'+firstTeamId+'}'),
+        dataType:"html",
+        contentType:'application/json' ,
+        success:function (list)
+        {
+            
+            $("#dialog").html(list);
+            $("#dialog").dialog('open');
+        },
+        error:function (xhr)
+        {
+            var err= eval("(" +xhr.responseText +")");
+            alert(err.messages);
+        }
+        });
+    } );
+    
+    $(document).on("click" , "#btnSave" , function (event)
+    {        
+    SendDataToServer(event);
+       });
+       
+       function SendDataToServer(event)
+       {
+           event.preventDefault();
+                      
+           let team1={};
+           let teamId1 = $("#First_Team").find('option:selected').val();
+           team1.Id =teamId1;
+           let team2={};
+           let teamId2=$("#Second_Team").find('option:selected').val();
+           team2.Id=teamId2;
+           
+           let teams = new Array();
+           teams.push(team1);
+           teams.push(team2)
+           
+           
+           let model={};
+           model.StartDate=$("#StartDate").val();
+           model.MatchTypes=$("#MatchType").find('option:selected').text();
+           model.Teams = teams;
+           let input = JSON.stringify(model);
+           
+           $.ajax(
+               {
+               type:"POST",
+               url :"/Match/New",
+               data:JSON.stringify(input),
+               contentType:"application/json",
+               dataType:"JSON",
+                success: function(url) {
+                        window.location.href=url;
+                                   
+                      },
+                error: function(xhr) {           
+                        var err = eval("(" + xhr.responseText + ")");
+                        alert(err.messages);
+                       }               
+               }
+               );
+                      
+       }
+       
+       
+      function  sendSuggestedTomain(id)
+      {       
+        
+          $("#Second_Team").val(id);          
+          $("#dialog").dialog('close');
+      }
+    </script>
+
+}
