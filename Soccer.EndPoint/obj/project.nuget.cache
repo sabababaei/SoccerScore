@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "bSyAImiVAtQyU5f7hhNJ0sVsVD1KASPK99K7KMCSZ4ldv4ngGcr9EytpnddlkqPbABNxkfPA6KI4C3cAHYmrLQ==",
+  "dgSpecHash": "HM4XI0L2H4W8axHQWXEnuFWH+uWW+UGVi1LV52S8dTGgMg/xjkw/CEfNqaCkQV0md6F4t/+mivDzuELey1fYVw==",
   "success": true,
   "projectFilePath": "F:\\Asp Net Core test Projects\\SoccerScore\\Soccer.EndPoint\\Soccer.EndPoint.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\myPc\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\myPc\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\myPc\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\myPc\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\myPc\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\myPc\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\myPc\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

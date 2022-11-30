@@ -6,6 +6,9 @@ F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\Socce
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\Soccer.EndPoint.runtimeconfig.json
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\Soccer.EndPoint.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\Soccer.EndPoint.pdb
+F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\FluentValidation.dll
+F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\Humanizer.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\MediatR.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\MediatR.Contracts.dll
@@ -56,6 +59,7 @@ F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\Socce
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\Soccer.EndPoint.AssemblyInfoInputs.cache
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\Soccer.EndPoint.AssemblyInfo.cs
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\Soccer.EndPoint.csproj.CoreCompileInputs.cache
+F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\Soccer.EndPoint.MvcApplicationPartsAssemblyInfo.cs
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\Soccer.EndPoint.MvcApplicationPartsAssemblyInfo.cache
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\Soccer.EndPoint.RazorAssemblyInfo.cache
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\Soccer.EndPoint.RazorAssemblyInfo.cs
@@ -70,4 +74,3 @@ F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\refin
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\Soccer.EndPoint.pdb
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\Soccer.EndPoint.genruntimeconfig.cache
 F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\obj\Debug\net6.0\ref\Soccer.EndPoint.dll
-F:\Asp Net Core test Projects\SoccerScore\Soccer.EndPoint\bin\Debug\net6.0\FluentValidation.dll

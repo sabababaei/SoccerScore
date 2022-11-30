@@ -2,7 +2,6 @@ using System.Reflection;
 using Application.Common.Configurations;
 using Application.Interfaces;
 using MediatR;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -14,7 +13,8 @@ builder.Services.AddScoped<IDataBaseContext, DataBaseContext>();
 var myConnection = builder.Configuration["ConnectionStrings:SqlConnection"];
 builder.Services.AddDbContext<DataBaseContext>(option => option.UseSqlServer(myConnection));
 builder.Services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddValidations();
+
+builder.Services.AddValidations(Assembly.GetCallingAssembly());
 
 var app = builder.Build();
 
@@ -36,7 +36,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-
+ 
 
 app.Run();

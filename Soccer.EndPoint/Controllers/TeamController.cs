@@ -1,12 +1,15 @@
 using System.Text.Json;
 using Application.Services.Players.Queries.GetPlayerList;
 using Application.Services.Teams.Commands.CreateTeam;
+using Application.Services.Teams.Commands.UpdateTeam;
 using Application.Services.Teams.Queries.GetTeamDetail;
 using Application.Services.Teams.Queries.GetTeamList;
 using Application.Services.Teams.Queries.GetTeamOfSameStrength;
 using Application.Services.Teams.Queries.GetTeamSummery.Queries.GetTeamMatchesInfo;
 using Application.Services.Teams.Queries.GetTeamSummery.Queries.GetTeamStatisticalInfoHistory;
 using Domain.Entities.Players;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -18,6 +21,12 @@ namespace Soccer.EndPoint.Controllers;
 
 public class TeamController : BaseController
 {
+    private readonly IValidator<CreateTeamCommand> _createValidator;
+
+    public TeamController(IValidator<CreateTeamCommand> createValidator , IValidator<UpdateTeamCommand> updateValidator )
+    {
+        _createValidator = createValidator;
+    }
     // GET
     public IActionResult Index()
     {
@@ -35,7 +44,7 @@ public class TeamController : BaseController
             }).ToList();
         return View(list);
     }
-
+    
     [HttpGet]
     public IActionResult New()
     {
@@ -47,33 +56,48 @@ public class TeamController : BaseController
         });
     }
 
+   
     [HttpPost]
-    public IActionResult New([FromBody]string input)
+    public IActionResult New([FromBody] string input)
     {
+
         NewTeamVm entity = JsonSerializer.Deserialize<NewTeamVm>(input);
-       
-        var result = Mediator.Send(new CreateTeamCommand()
+        CreateTeamCommand teamCommand = new CreateTeamCommand()
         {
             Players = entity.Players.Select(p => new Player()
             {
                 Id = p.PlayerId
             }).ToList(),
             TeamName = entity.TeamName
-        }).Result;
-        if (result.Succeeded)
+        };
+        ValidationResult validationResult = _createValidator.Validate(teamCommand);
+        if (validationResult.IsValid)
         {
-            return Json( Url.Action("Index"));
+            var result = Mediator.Send(teamCommand).Result;
+            if (result.Succeeded)
+            {
+                return Json(Url.Action("Index"));
+            }
+            else
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error);
+                }
+
+                return Json(Url.Action("New", entity));
+            }
         }
         else
         {
-            foreach (var error in result.Errors)
+            foreach (var error in validationResult.Errors)
             {
-                ModelState.AddModelError("", error);
+                ModelState.AddModelError("", error.ErrorMessage);
             }
 
             return Json(Url.Action("New", entity));
         }
-       
+
     }
 
     public IActionResult Edit()
