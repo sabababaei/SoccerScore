@@ -15,6 +15,7 @@ F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Soccer.Te
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Soccer.Test.runtimeconfig.json
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Soccer.Test.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Soccer.Test.pdb
+F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Castle.Core.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\FluentValidation.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
@@ -25,10 +26,17 @@ F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -42,6 +50,7 @@ F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.TestPlatform.Utilities.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Moq.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Newtonsoft.Json.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\NuGet.Frameworks.dll
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
@@ -151,12 +160,3 @@ F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\obj\Debug\net6.0\refint\So
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\obj\Debug\net6.0\Soccer.Test.pdb
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\obj\Debug\net6.0\Soccer.Test.genruntimeconfig.cache
 F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\obj\Debug\net6.0\ref\Soccer.Test.dll
-F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Castle.Core.dll
-F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Moq.dll
-F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
-F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
-F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
-F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-F:\Asp Net Core test Projects\SoccerScore\Soccer.Test\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
